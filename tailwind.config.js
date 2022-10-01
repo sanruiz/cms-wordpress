@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -11,7 +12,18 @@ module.exports = {
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
         success: '#0070f3',
-        cyan: '#79FFE1',
+        cyan: {
+          '100': '#ccfbf1',
+          '200': '#99f6e4',
+          '300': '#5eead4',
+          '400': '#2dd4bf',
+          '500': '#14b8a6',
+          '600': '#0891b2',
+          '700': '#0e7490',
+          '800': '#155e75',
+          '900': '#164e63',
+        },
+        bgdark: '#1e293b'
       },
       spacing: {
         28: '7rem',
@@ -21,6 +33,10 @@ module.exports = {
       },
       lineHeight: {
         tight: 1.2,
+      },
+      fontFamily: {
+        fraunces: ['Fraunces'],
+        montserrat: ['Montserrat']
       },
       fontSize: {
         '5xl': '2.5rem',

@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import Head from "next/head";
+import { CMS_NAME, HOME_OG_IMAGE_URL } from "../lib/constants";
 
 export default function Meta() {
   return (
@@ -25,18 +25,25 @@ export default function Meta() {
       <link
         rel="mask-icon"
         href="/favicon/safari-pinned-tab.svg"
-        color="#000000"
+        color="#5bbad5"
       />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#000000" />
-      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-      <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+      <meta name="theme-color" content="#ffffff" />
       <meta
-        name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        name="Description"
+        content="Santiago Ramirez Ruiz - Personal Webpage, services Web developer, php developer, Project manager"
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta name="author" content="Santiago Ramirez Ruiz" />
+
+      <meta
+        name="Keywords"
+        content="React, Php, html, css, Project manager, Developer"
+      />
+      
     </Head>
-  )
+  );
 }

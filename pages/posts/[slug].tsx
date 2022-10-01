@@ -13,19 +13,24 @@ import PostTitle from '../../components/post-title'
 import Tags from '../../components/tags'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import { CMS_NAME } from '../../lib/constants'
+import { useState } from 'react'
 
-export default function Post({ post, posts, preview }) {
+export default function Post({ post, posts }) {
   const router = useRouter()
   const morePosts = posts?.edges
+
+  const [darkMode, setDarkMode] = useState(false);
+
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+  const htmlTitle = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
 
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
-        <Header />
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
@@ -33,11 +38,11 @@ export default function Post({ post, posts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {htmlTitle}
                 </title>
                 <meta
                   property="og:image"
-                  content={post.featuredImage?.sourceUrl}
+                  content={post.featuredImage?.node.sourceUrl}
                 />
               </Head>
               <PostHeader
