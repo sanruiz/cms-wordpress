@@ -1,18 +1,6 @@
 import { FunctionComponent } from "react";
 import Project from "./project";
 
-interface node {
-    title: string;
-    excerpt: string;
-    slug: string;
-    date: string;
-    featuredImage: {
-      node: {
-        sourceUrl: string
-      }
-    };
-    author: [Object];
-  }
 
 const Projects = ({posts}) => {
     return ( 
@@ -20,7 +8,7 @@ const Projects = ({posts}) => {
             
         {posts.map(({ node }) => (
             <div className="" >
-            <Project {...node}  />
+            <Project {...node}  key={node.slug} />
             </div>
         ))}
         </div>

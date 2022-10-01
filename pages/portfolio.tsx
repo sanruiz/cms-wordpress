@@ -15,20 +15,12 @@ import Layout from "../components/layout";
 import { GetStaticProps } from "next";
 import { getAllPostsForHome, getPostAndMorePosts } from "../lib/api";
 import Header from "../components/header";
-import Projects from "../components/Projects";
+import Projects from "../components/projects";
 
 interface card {
   title: string;
   text: string;
   img: StaticImageData;
-}
-interface node {
-  title: string;
-  excerpt: string;
-  slug: string;
-  date: string;
-  featuredImage: [Object];
-  author: [Object];
 }
 
 export default function Portfolio({ allPosts: { edges } }) {
