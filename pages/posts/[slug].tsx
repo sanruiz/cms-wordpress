@@ -25,7 +25,7 @@ export default function Post({ post, posts }) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  const htmlTitle = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+  const htmlTitle = `${post?.title} | Next.js Blog Example with ${CMS_NAME}`
 
   return (
     <Layout>

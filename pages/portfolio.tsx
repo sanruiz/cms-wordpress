@@ -67,25 +67,25 @@ export default function Portfolio({ allPosts: { edges } }) {
           <section className="md:max-w-lg mx-auto">
             <div className="text-center p-10">
               <div className="relative mx-auto overflow-hidden rounded-full my-10 w-60 h-60 xl:h-96 xl:w-96 ">
-                <Image src={srrImage} layout="fill" objectFit="cover" />
+                <Image src={srrImage} layout="fill" alt="Santiago Ramirez" objectFit="cover" />
               </div>
               <h3 className="text-2xl text-cyan-700 py-2 font-medium md:text-6xl">
                 Fullstack Developer
               </h3>
               <p className="text-base py-5 leading-8 text-gray-800  dark:text-gray-400 md:text-xl">
                 Freelancer providing services for programing and content needs.
-                Join me down and let's get work!
+                Join me down and let&apos;s get work!
               </p>
             </div>
 
             <div className="text-5xl flex justify-center gap-10 py-3">
-              <a href="https://github.com/sanruiz" target="_blank">
+              <a href="https://github.com/sanruiz" target="_blank" rel="noreferrer" >
                 <AiOutlineGithub />
               </a>
-              <a href="https://www.linkedin.com/in/sanruiz" target="_blank">
+              <a href="https://www.linkedin.com/in/sanruiz" target="_blank" rel="noreferrer">
                 <AiOutlineLinkedin />
               </a>
-              <a href="https://twitter.com/sanruiz" target="_blank">
+              <a href="https://twitter.com/sanruiz" target="_blank" rel="noreferrer">
                 <AiOutlineTwitter />
               </a>
             </div>
@@ -102,7 +102,7 @@ export default function Portfolio({ allPosts: { edges } }) {
           <section className="md:max-w-5xl mx-auto">
             <h3 className="text-3xl py-1"> Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-80">
-              Since the begining of my journey as a freelance developer, I've
+              Since the begining of my journey as a freelance developer, I&apos;ve
               done remote work for{" "}
               <span className="text-cyan-600">agencies</span>, consulted for{" "}
               <span className="text-cyan-600">startups</span> and collaborated
