@@ -21,6 +21,7 @@ export default function Header({ darkMode, setDarkMode }) {
             className="bg-gradient-to-r bg-cyan-600 hover:bg-cyan-700 rounded-md ml-8 text-white px-4 py-2"
             href="https://www.linkedin.com/in/sanruiz/"
             target="_blank"
+            rel="noopener"
           >
             Resume
           </a>
