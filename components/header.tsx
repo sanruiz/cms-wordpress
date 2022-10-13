@@ -5,7 +5,7 @@ export default function Header({ darkMode, setDarkMode }) {
   return (
     <nav className="pt-3  flex justify-between">
       <h1 className="text-3xl font-fraunces">
-        <Link href={"/portfolio"}>Santiago Ramirez</Link>
+        <Link href={"/"}>Santiago Ramirez</Link>
       </h1>
       <ul className="flex items-center">
         <li
