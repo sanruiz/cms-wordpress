@@ -28,19 +28,21 @@ export default function Post({ post, posts }) {
 
   return (
     <Layout>
-      <Head>
-        <title>{htmlTitle}</title>
-        <meta
-          property="og:image"
-          content={post.featuredImage?.node.sourceUrl}
-        />
-      </Head>
       <div className={darkMode ? "dark" : ""}>
         <main className="bg-gray-50 px-10 md:px-20 lg:px-40 dark:bg-slate-800 dark:text-gray-400">
           <Container>
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
             {router.isFallback ? (
-              <PostTitle>Loading…</PostTitle>
+              <>
+                <PostTitle>Loading…</PostTitle>
+                <Head>
+                  <title>{htmlTitle}</title>
+                  <meta
+                    property="og:image"
+                    content={post.featuredImage?.node.sourceUrl}
+                  />
+                </Head>
+              </>
             ) : (
               <>
                 <article>
