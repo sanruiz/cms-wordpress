@@ -74,6 +74,7 @@ export default function Index({ allPosts: { edges } }) {
                     layout="fill"
                     alt="Santiago Ramirez"
                     objectFit="cover"
+                    priority={true}
                   />
                 </div>
                 <h3 className="text-2xl text-cyan-700 py-2 font-medium md:text-6xl">
