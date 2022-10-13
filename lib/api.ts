@@ -75,6 +75,11 @@ export async function getAllPostsForHome(preview) {
                 sourceUrl
               }
             }
+            tags {
+              nodes {
+                name
+              }
+            }
             author {
               node {
                 name
@@ -143,10 +148,8 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
         }
       }
       tags {
-        edges {
-          node {
-            name
-          }
+        nodes {
+          name
         }
       }
     }
