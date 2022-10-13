@@ -39,7 +39,7 @@ export default function Post({ post, posts }) {
                   <title>{htmlTitle}</title>
                   <meta
                     property="og:image"
-                    content={post.featuredImage?.node.sourceUrl}
+                    content={post?.featuredImage?.node.sourceUrl}
                   />
                 </Head>
               </>
