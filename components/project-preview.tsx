@@ -20,9 +20,12 @@ interface post {
   author: [Object];
 }
 
-function Project(post: post) {
+function ProjectPreview(post: post) {
   return (
-    <div className="overflow-hidden rounded-lg pb-4 text-center">
+    <div
+      data-project={post.title}
+      className=" shadow-lg rounded-lg pb-4 text-center dark:shadow-slate-900"
+    >
       <div>
         {post.featuredImage && (
           <CoverImage
@@ -32,7 +35,7 @@ function Project(post: post) {
           />
         )}
       </div>
-      <h3 className="text-xl mb-0 leading-snug">
+      <h3 className="text-md font-medium mb-0 leading-snug">
         <Link href={`/posts/${post.slug}`}>
           <a
             className="hover:underline"
@@ -40,13 +43,9 @@ function Project(post: post) {
           ></a>
         </Link>
       </h3>
-      <ul>{post.tags.nodes?.length > 0 && <Tags tags={post.tags} />}</ul>
-      {/* <div
-        className="mb-4"
-        dangerouslySetInnerHTML={{ __html: post.excerpt }}
-      /> */}
+      {post.tags.nodes?.length > 0 && <Tags tags={post.tags} />}
     </div>
   );
 }
 
-export default Project;
+export default ProjectPreview;
