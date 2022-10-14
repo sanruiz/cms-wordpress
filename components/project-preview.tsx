@@ -23,7 +23,7 @@ interface post {
 function ProjectPreview(post: post) {
   return (
     <div
-      data-project={post.title}
+      data-projectpreview={post.title}
       className=" shadow-lg rounded-lg pb-4 text-center dark:shadow-slate-900"
     >
       <div>
