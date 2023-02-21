@@ -14,6 +14,8 @@ module.exports = {
       '1.gravatar.com',
       '2.gravatar.com',
       'secure.gravatar.com',
+      'i0.wp.com',
+      'i2.wp.com'
     ],
   },
 }
