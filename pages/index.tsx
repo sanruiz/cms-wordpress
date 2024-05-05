@@ -81,8 +81,10 @@ export default function Index({ allPosts: { edges } }) {
                   Fullstack Developer
                 </h3>
                 <p className="text-base py-5 leading-8 text-gray-800  dark:text-gray-400 md:text-xl">
-                  Freelancer providing services for programing and content
-                  needs. Join me down and let&apos;s get work!
+                I've spent over a decade in web development, specializing in creating and refining web applications that stand out for their innovation and functionality. My expertise centers around modern JavaScript frameworks like React and Next.js, backed by solid skills in HTML, CSS, and PHP.
+                </p>
+                <p>
+                  I focus on writing clean code and designing efficient solutions that enhance user experiences and contribute positively to business goals. Outside of work, I enjoy staying updated with the latest technology trends and spending time outdoors.
                 </p>
               </div>
 
@@ -122,12 +124,7 @@ export default function Index({ allPosts: { edges } }) {
             <section className="md:max-w-5xl mx-auto">
               <h3 className="text-3xl py-1"> Portfolio</h3>
               <p className="text-md py-2 leading-8 text-gray-80">
-                Since the begining of my journey as a freelance developer,
-                I&apos;ve done remote work for{" "}
-                <span className="text-cyan-600">agencies</span>, consulted for{" "}
-                <span className="text-cyan-600">startups</span> and collaborated
-                with talented people to create digital products for both
-                business and consumer use.
+                Explore a selection of projects that showcase my expertise in web development. Each featured project is a testament to my ability to integrate modern design with powerful functionality, utilizing technologies like React, Next.js, HTML, CSS, and PHP. From innovative web applications to dynamic user interfaces, these projects highlight my commitment to delivering exceptional digital experiences.
               </p>
 
               <Projects posts={edges} />
