@@ -20,10 +20,10 @@ export default function PostPreview({
       </div>
       <h3 className="text-2xl mb-3 leading-snug">
         <Link href={`/posts/${slug}`}>
-          <a
+          <span
             className="hover:underline"
             dangerouslySetInnerHTML={{ __html: title }}
-          ></a>
+          ></span>
         </Link>
       </h3>
     </div>

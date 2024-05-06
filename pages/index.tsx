@@ -66,7 +66,7 @@ export default function Index({ allPosts: { edges } }) {
         <main className="bg-gray-50 px-10 md:px-20 lg:px-40 dark:bg-slate-800 dark:text-gray-400">
           <Container>
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-            <section className="md:max-w-lg mx-auto">
+            <section className="md:max-w-5xl mx-auto">
               <div className="text-center p-10">
                 <div className="relative mx-auto overflow-hidden rounded-full my-10 w-60 h-60 xl:h-96 xl:w-96 ">
                   <Image
@@ -81,9 +81,9 @@ export default function Index({ allPosts: { edges } }) {
                   Fullstack Developer
                 </h3>
                 <p className="text-base py-5 leading-8 text-gray-800  dark:text-gray-400 md:text-xl">
-                I've spent over a decade in web development, specializing in creating and refining web applications that stand out for their innovation and functionality. My expertise centers around modern JavaScript frameworks like React and Next.js, backed by solid skills in HTML, CSS, and PHP.
+                I&apos;ve spent over a decade in web development, specializing in creating and refining web applications that stand out for their innovation and functionality. My expertise centers around modern JavaScript frameworks like React and Next.js, backed by solid skills in HTML, CSS, and PHP.
                 </p>
-                <p>
+                <p className="text-base py-5 leading-8 text-gray-800  dark:text-gray-400 md:text-xl">
                   I focus on writing clean code and designing efficient solutions that enhance user experiences and contribute positively to business goals. Outside of work, I enjoy staying updated with the latest technology trends and spending time outdoors.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function Index({ allPosts: { edges } }) {
 
             <section className="md:max-w-5xl mx-auto">
               <h3 className="text-3xl py-1"> Portfolio</h3>
-              <p className="text-md py-2 leading-8 text-gray-80">
+              <p className="text-base py-5 leading-8 text-gray-800  dark:text-gray-400 md:text-xl">
                 Explore a selection of projects that showcase my expertise in web development. Each featured project is a testament to my ability to integrate modern design with powerful functionality, utilizing technologies like React, Next.js, HTML, CSS, and PHP. From innovative web applications to dynamic user interfaces, these projects highlight my commitment to delivering exceptional digital experiences.
               </p>
 

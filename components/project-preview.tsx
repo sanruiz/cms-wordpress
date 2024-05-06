@@ -37,10 +37,10 @@ function ProjectPreview(post: post) {
       </div>
       <h3 className="text-md font-medium mb-0 leading-snug">
         <Link href={`/posts/${post.slug}`}>
-          <a
+          <span
             className="hover:underline"
             dangerouslySetInnerHTML={{ __html: post.title }}
-          ></a>
+          ></span>
         </Link>
       </h3>
       {post.tags.nodes?.length > 0 && <Tags tags={post.tags} />}
